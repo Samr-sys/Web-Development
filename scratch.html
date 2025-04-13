@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Samantha's Nature Page</title>
+  <link rel="stylesheet" href="css/scratch-style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* CSS to center the Test Your Nature Knowledge section */
+    .center-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 20px;
+    }
+
+    .button-link {
+        background-color: #00796b;
+        color: white;
+        padding: 10px 20px;
+        font-size: 1.2em;
+        border-radius: 5px;
+        text-decoration: none;
+        display: inline-block;
+        transition: background-color 0.3s;
+    }
+
+    .button-link:hover {
+        background-color: #004d40;
+    }
+
+    /* Style for image section to keep it consistent */
+    .image-section {
+        text-align: center;
+        margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">← Back to Main Site</a>
+  </nav>
+
+  <header>
+    <h1 class="highlight">🌿 Welcome to My Nature Page! 🌿</h1>
+  </header>
+  
+  <section class="jump-section">
+    <a href="#nature-section" class="jump-link">Jump to Nature Section ↓</a>
+  </section>
+
+  <section class="tableau-section">
+    <h2>Explore Nature Data!</h2>
+    <div class='tableauPlaceholder' id='viz1744517944148' style='position: relative'>
+      <noscript>
+        <a href='#'>
+          <img alt='Dashboard 1 ' src='https://public.tableau.com/static/images/Fi/FindingHealthBenefitsinNature/Dashboard1/1_rss.png' style='border: none' />
+        </a>
+      </noscript>
+      <object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='FindingHealthBenefitsinNature/Dashboard1' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https://public.tableau.com/static/images/Fi/FindingHealthBenefitsinNature/Dashboard1/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+      </object>
+    </div>
+    <script type='text/javascript'>
+      var divElement = document.getElementById('viz1744517944148');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      vizElement.style.width = '650px';
+      vizElement.style.height = '887px';
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+  </section>
+
+  <section class="nature-section">
+    <h2 id="nature-section">Why I <span class="love-word">Love</span> Nature</h2>
+    <ol class="nature-list">
+      <li><span class="plant-word">Plants</span>
+        <ul>
+          <li>Houseplants</li>
+          <li>Gardening</li>
+          <li>Everybody loves flowers!</li>
+        </ul>
+      </li>
+      <li><span class="hike-word">Hiking</span>
+        <ul>
+          <li>Local trails</li>
+          <li>National parks</li>
+          <li>State parks</li>
+        </ul>
+      </li>
+      <li><span class="fish-word">Fishing</span>
+        <ul>
+          <li>Lake fishing</li>
+          <li>River fishing</li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+
+  <!-- Centered Nature Riddle Link Section -->
+  <section class="center-section">
+    <h2>Test Your Nature Knowledge!</h2>
+    <p>Click the link below to try out the Nature Riddle Generator:</p>
+    <a href="nature-riddle-app.html" target="_blank" class="button-link">🌱 Nature Riddle Generator 🌳</a>
+  </section>
+
+  <section class="image-section">
+    <img src="https://marketplace.canva.com/EAGK_VGJ-wk/1/0/1600w/canva-purple-illustrative-lavender-desktop-wallpaper-IJjKe9JIOeM.jpg" alt="A scenic view of a forest">
+  </section>
+
+  <section class="video-section">
+    <h2>Relax with Nature 🌲🎵</h2>
+    <div class="video-wrapper">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/w6uX9jamcwQ" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+        encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; Samantha Ringhand 2025</p>
+  </footer>
+
+</body>
+</html>

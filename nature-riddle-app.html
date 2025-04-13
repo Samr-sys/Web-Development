@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Riddle Generator</title>
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #f2fff2;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #388e3c;
+        }
+
+        .riddle-container {
+            background-color: #e0f2f1;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px auto;
+            width: 70%;
+            max-width: 600px;
+        }
+
+        .riddle {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .answer {
+            color: #00796b;
+            font-size: 1.2em;
+            display: none;
+        }
+
+        .button {
+            background-color: #00796b;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #004d40;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🌱 Nature Riddle Generator 🌳</h1>
+    <div class="riddle-container">
+        <p class="riddle" id="riddle">Click the button to get a nature-themed riddle!</p>
+        <p class="answer" id="answer"></p>
+        <button class="button" onclick="newRiddle()">Get New Riddle</button>
+    </div>
+
+    <script>
+        const riddles = [
+            {
+                question: "I grow, but I never water myself. What am I?",
+                answer: "A plant"
+            },
+            {
+                question: "What has roots that nobody sees, is taller than trees, up, up it goes, and yet never grows?",
+                answer: "A mountain"
+            },
+            {
+                question: "I’m full of holes, but I can hold a lot of weight. What am I?",
+                answer: "A net (like a spider's web)"
+            },
+            {
+                question: "I have leaves but am not a tree. I have bark but I am not a dog. What am I?",
+                answer: "A book"
+            },
+            {
+                question: "The more you take, the more you leave behind. What am I?",
+                answer: "Footsteps in nature"
+            }
+        ];
+
+        function newRiddle() {
+            const randomIndex = Math.floor(Math.random() * riddles.length);
+            const riddle = riddles[randomIndex];
+            document.getElementById("riddle").innerText = riddle.question;
+            document.getElementById("answer").innerText = riddle.answer;
+            document.getElementById("answer").style.display = "none";
+
+            // Show answer after 3 seconds
+            setTimeout(() => {
+                document.getElementById("answer").style.display = "block";
+            }, 3000);  // Answer appears after 3 seconds
+        }
+    </script>
+
+</body>
+</html>

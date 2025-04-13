@@ -1,0 +1,195 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f2fff2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    background-color: #d3f8d3;
+    padding: 10px 20px;
+    text-align: left;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #2e7d32;
+    font-weight: bold;
+  }
+  
+  header {
+    text-align: center;
+    background-color: #b2dfdb;
+    padding: 40px 20px;
+  }
+  
+  h1.highlight {
+    color: #2e7d32;
+  }
+
+  .jump-section {
+    text-align: center;
+    margin: 30px 0;
+  }
+  
+  .jump-link {
+    display: inline-block;
+    font-weight: bold;
+    color: #00796b;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #00796b;
+    border-radius: 8px;
+    background-color: #e0f2f1;
+    transition: background-color 0.3s ease;
+  }
+  
+  .jump-link:hover {
+    background-color: #b2dfdb;
+  }
+  
+  .nature-section {
+    padding: 30px;
+    background-color: #ffffff;
+  }
+  
+  .nature-section {
+    padding: 30px;
+    background-color: #ffffff;
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    text-align: center; /* Center the text inside */
+  }
+  
+  .nature-section h2 {
+    color: #388e3c;
+    margin-bottom: 20px; /* Adds space between title and list */
+  }
+  
+  .nature-section .nature-list {
+    list-style-type: none; /* Remove default list bullets */
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  .nature-section .nature-list li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+  
+  .nature-section .nature-list ul {
+    list-style-type: none; /* Remove bullets from nested lists */
+    padding-left: 20px;
+    margin-top: 5px;
+  }
+  
+  .nature-section .nature-list ul li {
+    font-size: 1em;
+    margin-bottom: 5px;
+  }
+  
+  
+  .image-section {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .image-section img {
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .button-link {
+    background-color: #00796b;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.button-link:hover {
+    background-color: #004d40;
+}
+
+  
+  .tableau-section {
+    background-color: #e0f2f1;
+    padding: 20px;
+    text-align: center;
+  
+    /* Flexbox to center content but allow title to stay at the top */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center the content horizontally */
+    justify-content: flex-start; /* Keeps the title at the top */
+  }
+  
+  .tableau-section h2 {
+    margin-bottom: 20px; /* Adds space between the title and the Tableau viz */
+  }
+  
+  .tableau-section object {
+    width: 650px;
+    height: 887px;
+  }
+  
+  .styled-div {
+    background-color: #c8e6c9;
+    margin: 10px auto;
+    padding: 15px;
+    width: 80%;
+    font-size: 1.2em;
+    border-radius: 12px;
+    text-align: center;
+  }
+
+  .video-section {
+    background-color: #e8f5e9;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .video-section h2 {
+    color: #2e7d32;
+    margin-bottom: 20px;
+  }
+  
+  .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  
+  .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }  
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #a5d6a7;
+    color: #2e7d32;
+  }
+  
+  /* Colored words */
+  .love-word { color: #2e7d32; font-weight: bold; }
+  .plant-word { color: #ef5e9d; font-weight: bold; }
+  .hike-word { color: #1e88e5; font-weight: bold; }
+  .fish-word { color: #f57c00; font-weight: bold; }
+  
